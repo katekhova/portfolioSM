@@ -1,0 +1,22 @@
+{
+  "name": "maryna-smetana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o deploy/css/ --recursive "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katekhova/marynaSmetana.git"
+  },
+  "author": "Kateryna Khokhlova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katekhova/marynaSmetana/issues"
+  },
+  "homepage": "https://github.com/katekhova/marynaSmetana#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
