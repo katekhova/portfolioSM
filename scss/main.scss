@@ -1,9 +1,18 @@
-$mainthema_color: #444;
+$mainthema_color: #0d0c0c;
 
+@function complement_color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+$maincolor: complement_color($mainthema_color);
 * {
     box-sizing: border-box;
   }
   
 body {
     background-color: $mainthema_color;
+    color: $maincolor; 
 }
