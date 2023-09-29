@@ -1,5 +1,5 @@
-$mainthema_color: #0d0c0c;
-
+$mainthema_color: rgb(87, 87, 87);
+$secondary_color: #aa276b;
 @function complement_color($color) {
   @if (lightness($color) > 40) {
     @return #000;
@@ -7,12 +7,59 @@ $mainthema_color: #0d0c0c;
     @return #fff;
   }
 }
+
 $maincolor: complement_color($mainthema_color);
 * {
     box-sizing: border-box;
-  }
+    text-decoration: none;
+}    
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');  
   
 body {
     background-color: $mainthema_color;
-    color: $maincolor; 
-}
+    color: $maincolor;
+  }
+
+.myheader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    border-radius: 2em;
+    background-color: darken($color: $mainthema_color, $amount: 24);
+    .buchen {
+      width: 10%;
+      margin: 3vh 2vw;
+      text-align: center;
+      font-size:x-large;
+      font-family: 'Playfair Display', sans-serif; 
+      a {
+         color: $maincolor;    
+        &:hover {
+          text-shadow: 2px 1px $secondary_color;
+        }
+        }
+    }
+    .mainlogo {
+      margin: 0 10%;
+      img {
+        position: absolute;
+        width: 50%;
+        margin: auto;
+        height: 50vh;
+        object-fit: cover;
+        z-index: -1;
+      }
+      z-index: 2;
+      .namelogo {
+        font-family: 'Dancing Script', cursive;
+        position: relative;
+        margin: 50%;
+      }
+      
+    }
+
+  }
+  
