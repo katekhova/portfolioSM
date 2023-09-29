@@ -1,5 +1,9 @@
 $mainthema_color: #444;
 
+* {
+    box-sizing: border-box;
+  }
+  
 body {
     background-color: $mainthema_color;
 }
