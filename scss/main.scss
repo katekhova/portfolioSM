@@ -1,4 +1,4 @@
-$mainthema_color: rgb(87, 87, 87);
+$mainthema_color: rgb(67, 67, 67);
 $secondary_color: #aa276b;
 @function complement_color($color) {
   @if (lightness($color) > 40) {
@@ -9,57 +9,75 @@ $secondary_color: #aa276b;
 }
 
 $maincolor: complement_color($mainthema_color);
-* {
-    box-sizing: border-box;
-    text-decoration: none;
-}    
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap');  
-  
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap");
+
 body {
-    background-color: $mainthema_color;
-    color: $maincolor;
-  }
+  background-color: $mainthema_color;
+  color: $maincolor;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
 
 .myheader {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 50vh;
-    margin: auto;
-    border-radius: 2em;
-    background-color: darken($color: $mainthema_color, $amount: 24);
-    .buchen {
-      width: 10%;
-      margin: 3vh 2vw;
-      text-align: center;
-      font-size:x-large;
-      font-family: 'Playfair Display', sans-serif; 
-      a {
-         color: $maincolor;    
-        &:hover {
-          text-shadow: 2px 1px $secondary_color;
-        }
-        }
-    }
-    .mainlogo {
-      margin: 0 10%;
-      img {
-        position: absolute;
-        width: 50%;
-        margin: auto;
-        height: 50vh;
-        object-fit: cover;
-        z-index: -1;
+  $header_height: calc(max(25vh, 100px));
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: $header_height;
+  border-radius: 30px;
+  $mainthema_color_dark: darken(
+    $color: $mainthema_color,
+    $amount: 24,
+  );
+  background-color: $mainthema_color_dark;
+  .buchen {
+    padding: 3vh 2vw;
+    a {
+      h1 {
+        padding: 5% 10%;
+        margin: 0;
+        color: $maincolor;
+        $font_min_size: calc(max(2vw, 0.6em));
+        text-align: center;
+        font-size: $font_min_size;
+        font-family: "Playfair Display", sans-serif;
       }
-      z-index: 2;
-      .namelogo {
-        font-family: 'Dancing Script', cursive;
-        position: relative;
-        margin: 50%;
+      &:hover {
+        text-shadow: 3px 2px 2px $secondary_color;
       }
-      
     }
-
   }
-  
+  .mainlogo {
+    padding: 0 10%;
+    flex-grow: 1;
+    img {
+      position: absolute;
+      width: 30%;
+      height: $header_height;
+      object-fit: cover;
+      object-position: 55% 35%;
+    }
+    .namelogo {
+      font-family: "Dancing Script", cursive;
+      position: relative;
+      background-color: rgba($color: $mainthema_color_dark, $alpha: 0.3);
+      border-radius: 20px;
+      $font_min_size: calc(max(2vw, 1.4em));
+      font-size: $font_min_size;
+      text-align: center;
+      text-shadow: 1.4px 0 1px $secondary_color,
+        2px 0 1px darken($color: $secondary_color, $amount: 30);
+      left: 4%;
+      width: 45%;
+      bottom: -32px;
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+}
