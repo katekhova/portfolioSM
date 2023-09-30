@@ -4,7 +4,7 @@ $secondary_color: #aa276b;
   @if (lightness($color) > 40) {
     @return #000;
   } @else {
-    @return #fff;
+    @return #f6eef6;
   }
 }
 
@@ -47,7 +47,8 @@ body {
         font-size: $font_min_size;
         font-family: "Playfair Display", sans-serif;
       }
-      &:hover {
+      &:hover,
+      &:active {
         text-shadow: 3px 2px 2px $secondary_color;
       }
     }
@@ -74,9 +75,43 @@ body {
         2px 0 1px darken($color: $secondary_color, $amount: 30);
       left: 4%;
       width: 45%;
-      bottom: -32px;
+      bottom: -15px;
       h1 {
         margin: 0;
+      }
+    }
+  }
+}
+
+#home {
+  width: 100%;
+  .gallery {
+    width: 80%;
+    margin: 5vh auto;
+    img {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+      object-position: center 60%;
+      border-radius: 100px;
+    }
+    .dot_control {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      margin: 3vh 0;
+      justify-content: center;
+      justify-self: center;
+      .dot {
+        $size_dot: 75px;
+        width: $size_dot;
+        margin: 0.5vh 0.9vw;
+        & img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+          height: $size_dot;
+        }
       }
     }
   }
