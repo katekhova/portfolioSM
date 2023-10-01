@@ -8,6 +8,14 @@ $secondary_color: #aa276b;
   }
 }
 
+@font-face {
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/CooperHewitt-Light.ttf");
+}
+@font-face {
+  font-family: "Cheque";
+  src: url("../fonts/Cheque Regular 400.otf");
+}
 $maincolor: complement_color($mainthema_color);
 
 * {
@@ -15,7 +23,7 @@ $maincolor: complement_color($mainthema_color);
   text-decoration: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Ubuntu:wght@400;700&display=swap");
 
 body {
   background-color: $mainthema_color;
@@ -45,7 +53,8 @@ body {
         $font_min_size: calc(max(2vw, 0.7em));
         text-align: center;
         font-size: $font_min_size;
-        font-family: "Playfair Display", sans-serif;
+        font-family: "Cheque", sans-serif;
+        font-weight: 100;
       }
       &:hover,
       &:active {
@@ -124,6 +133,30 @@ body {
           opacity: 1;
         }
       }
+    }
+  }
+  .captionUnderGallery {
+    width: 80%;
+    margin: 5vh auto;
+    padding: 0 3vw;
+    h3 {
+      text-transform: uppercase;
+      line-height: 25px;
+      $font_min_size: calc(max(1.8vw, 1.1em));
+      font-size: $font_min_size;
+      font-family: "Cooper Hewitt";
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    h1 {
+      text-align: center;
+      color: $maincolor;
+      font-family: Ubuntu;
+      margin: 0;
+      letter-spacing: 1px;
+      $font_min_size: calc(max(4vw, 2em));
+      font-size: $font_min_size;
+      font-weight: 700;
     }
   }
 }
