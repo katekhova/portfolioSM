@@ -110,3 +110,45 @@ body {
       letter-spacing: 1px;
       font-size: calc(max(4vw, 2em));
       font-weight: 700; }
+
+.myfooter {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: calc(max(25vh, 100px));
+  border-radius: 30px;
+  background-color: gray; }
+  .myfooter .footerLinks {
+    width: 33.3%;
+    padding: 3vh 3vw;
+    display: flex;
+    flex-flow: column wrap; }
+    .myfooter .footerLinks a {
+      color: #f6eef6;
+      font-family: Ubuntu;
+      font-weight: 300; }
+  .myfooter .namelogo {
+    font-family: "Dancing Script", cursive;
+    position: relative;
+    font-size: calc(max(1.8vw, 1.1em));
+    text-align: center;
+    text-shadow: 2px 0 2px #aa276b, 1px 0 1px #fff, 3px 0 5px #190610, 2px 0 50px rgba(248, 248, 91, 0.8);
+    width: 33.3%;
+    height: 100%; }
+    .myfooter .namelogo h1 {
+      position: absolute;
+      margin: 0;
+      left: 7%;
+      top: 15%; }
+  .myfooter .socials {
+    width: 33.3%;
+    padding: 3vh 3vw 3vh 10vw;
+    display: flex;
+    flex-flow: column wrap; }
+    .myfooter .socials a {
+      color: #f6eef6;
+      font-family: Ubuntu;
+      font-weight: 300;
+      padding: 1vh 0; }
+      .myfooter .socials a .fab {
+        font-size: calc(max(2.6vw, 1.1em)); }
