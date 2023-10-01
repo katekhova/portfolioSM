@@ -42,7 +42,7 @@ body {
         padding: 5% 10%;
         margin: 0;
         color: $maincolor;
-        $font_min_size: calc(max(2vw, 0.6em));
+        $font_min_size: calc(max(2vw, 0.7em));
         text-align: center;
         font-size: $font_min_size;
         font-family: "Playfair Display", sans-serif;
@@ -56,26 +56,27 @@ body {
   .mainlogo {
     padding: 0 10%;
     flex-grow: 1;
+    position: relative;
     img {
       position: absolute;
-      width: 30%;
+      width: 40%;
       height: $header_height;
       object-fit: cover;
-      object-position: 55% 35%;
+      object-position: 48% 35%;
     }
     .namelogo {
       font-family: "Dancing Script", cursive;
-      position: relative;
       background-color: rgba($color: $mainthema_color_dark, $alpha: 0.3);
       border-radius: 20px;
-      $font_min_size: calc(max(2vw, 1.4em));
+      position: absolute;
+      $font_min_size: calc(max(1.8vw, 1.1em));
       font-size: $font_min_size;
       text-align: center;
       text-shadow: 1.4px 0 1px $secondary_color,
         2px 0 1px darken($color: $secondary_color, $amount: 30);
-      left: 4%;
-      width: 45%;
-      bottom: -125px;
+      left: 14.5%;
+      top: 10%;
+      width: 37%;
       h1 {
         margin: 0;
       }
@@ -94,7 +95,7 @@ body {
         height: 90vh;
         object-fit: cover;
         object-position: center 60%;
-        border-radius: 100px;
+        border-radius: 20px;
         display: none;
       }
       &.show {
@@ -109,7 +110,7 @@ body {
       justify-content: center;
       justify-self: center;
       .dot {
-        $size_dot: 75px;
+        $size_dot: 20px;
         width: $size_dot;
         margin: 0.5vh 0.9vw;
         & img {

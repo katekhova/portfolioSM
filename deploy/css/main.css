@@ -22,30 +22,31 @@ body {
       margin: 0;
       color: #f6eef6;
       text-align: center;
-      font-size: calc(max(2vw, 0.6em));
+      font-size: calc(max(2vw, 0.7em));
       font-family: "Playfair Display", sans-serif; }
     .myheader .buchen a:hover, .myheader .buchen a:active {
       text-shadow: 3px 2px 2px #aa276b; }
   .myheader .mainlogo {
     padding: 0 10%;
-    flex-grow: 1; }
+    flex-grow: 1;
+    position: relative; }
     .myheader .mainlogo img {
       position: absolute;
-      width: 30%;
+      width: 40%;
       height: calc(max(25vh, 100px));
       object-fit: cover;
-      object-position: 55% 35%; }
+      object-position: 48% 35%; }
     .myheader .mainlogo .namelogo {
       font-family: "Dancing Script", cursive;
-      position: relative;
       background-color: rgba(6, 6, 6, 0.3);
       border-radius: 20px;
-      font-size: calc(max(2vw, 1.4em));
+      position: absolute;
+      font-size: calc(max(1.8vw, 1.1em));
       text-align: center;
       text-shadow: 1.4px 0 1px #aa276b, 2px 0 1px #2e0a1d;
-      left: 4%;
-      width: 45%;
-      bottom: -125px; }
+      left: 14.5%;
+      top: 10%;
+      width: 37%; }
       .myheader .mainlogo .namelogo h1 {
         margin: 0; }
 
@@ -59,7 +60,7 @@ body {
       height: 90vh;
       object-fit: cover;
       object-position: center 60%;
-      border-radius: 100px;
+      border-radius: 20px;
       display: none; }
     #home .gallery img.show {
       display: block; }
@@ -71,13 +72,13 @@ body {
       justify-content: center;
       justify-self: center; }
       #home .gallery .dot_control .dot {
-        width: 75px;
+        width: 20px;
         margin: 0.5vh 0.9vw; }
         #home .gallery .dot_control .dot img {
           opacity: 0.5;
           width: 100%;
           object-fit: cover;
           border-radius: 50%;
-          height: 75px; }
+          height: 20px; }
         #home .gallery .dot_control .dot .current {
           opacity: 1; }
