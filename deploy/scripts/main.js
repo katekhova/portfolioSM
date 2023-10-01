@@ -49,20 +49,17 @@ function createDotElement(i) {
 
 function addDotEventListener(amount) {
   for (var i = 0; i < amount; i++) {
-    document
-      .getElementById("dot" + i)
-      .addEventListener("click", showImg(amount));
+    document.getElementById("dot" + i).addEventListener("click", showImg);
   }
 }
 
-function showImg(amount) {
-  for (var i = 0; i < amount; i++) {
+function showImg() {
+  for (var i = 0; i < amountOfPhotos; i++) {
     document.getElementById("photo_carusel_dot" + i).classList.remove("show");
   }
   document.getElementById("photo_carusel_" + this.id).classList.add("show");
-  for (var i = 0; i < amount; i++) {
+  for (var i = 0; i < amountOfPhotos; i++) {
     document.getElementById("dot" + i).classList.remove("current");
   }
   this.classList.add("current");
-  this.setAttribute("opacity", "1"); //border = "1px solid #aa276b";
 }
