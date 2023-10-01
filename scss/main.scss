@@ -118,6 +118,9 @@ body {
           border-radius: 50%;
           height: $size_dot;
         }
+        & .current {
+          opacity: 1;
+        }
       }
     }
   }

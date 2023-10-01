@@ -78,3 +78,5 @@ body {
           object-fit: cover;
           border-radius: 50%;
           height: 75px; }
+        #home .gallery .dot_control .dot .current {
+          opacity: 1; }
