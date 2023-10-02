@@ -63,24 +63,34 @@ function showImg() {
     document.getElementById("dot" + i).classList.remove("current");
   }
   this.classList.add("current");
+  currentPhoto = Number(this.id.substr(3, 1));
 }
 
 function showImgSlideshow() {
   if (currentPhoto < amountOfPhotos - 1) {
-    document
-      .getElementById("photo_carusel_dot" + currentPhoto)
-      .classList.remove("show");
-    document.getElementById("dot" + currentPhoto).classList.remove("current");
+    document;
+    for (var i = 0; i < amountOfPhotos; i++) {
+      document
+        .getElementById("photo_carusel_dot" + currentPhoto)
+        .classList.remove("show");
+    }
+    for (var i = 0; i < amountOfPhotos; i++) {
+      document.getElementById("dot" + currentPhoto).classList.remove("current");
+    }
     currentPhoto++;
     document
       .getElementById("photo_carusel_dot" + currentPhoto)
       .classList.add("show");
     document.getElementById("dot" + currentPhoto).classList.add("current");
   } else {
-    document
-      .getElementById("photo_carusel_dot" + currentPhoto)
-      .classList.remove("show");
-    document.getElementById("dot" + currentPhoto).classList.remove("current");
+    for (var i = 0; i < amountOfPhotos; i++) {
+      document
+        .getElementById("photo_carusel_dot" + currentPhoto)
+        .classList.remove("show");
+    }
+    for (var i = 0; i < amountOfPhotos; i++) {
+      document.getElementById("dot" + currentPhoto).classList.remove("current");
+    }
     document.getElementById("photo_carusel_dot0").classList.add("show");
     document.getElementById("dot0").classList.add("current");
     currentPhoto = 0;
