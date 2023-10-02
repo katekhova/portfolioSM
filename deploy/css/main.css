@@ -142,13 +142,14 @@ body {
       top: 15%; }
   .myfooter .socials {
     width: 33.3%;
-    padding: 3vh 3vw 3vh 10vw;
+    padding: 3vh 3vw 3vh 1vw;
     display: flex;
-    flex-flow: column wrap; }
+    flex-flow: column wrap;
+    text-align: right; }
     .myfooter .socials a {
       color: #f6eef6;
       font-family: Ubuntu;
       font-weight: 300;
       padding: 1vh 0; }
       .myfooter .socials a .fab {
-        font-size: calc(max(2.6vw, 1.1em)); }
+        font-size: calc(max(2vw, 1.1em)); }
