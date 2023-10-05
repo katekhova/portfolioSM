@@ -110,16 +110,28 @@ body {
         position: absolute;
         top: 10px;
         right: -15px;
+        min-width: fit-content;
         width: 20vw;
-        background-color: rgba(lighten($mainthema_color, 30), $alpha: 0.7);
+        background-color: rgba(lighten($mainthema_color, 30), $alpha: 0.9);
         border-radius: 0 20px 0 20px;
         padding: 5px 20px;
-        a {
-          display: block;
-          margin: 5px 0;
-          color: $maincolor;
-          $font_min_size: calc(max(2.4vw, 1.5em));
-          font-size: $font_min_size;
+        ul {
+          li {
+            margin: 5px 0;
+            &::marker {
+              content: "▶ ";
+              $font_min_size: calc(max(2.4vw, 1.5em));
+              font-size: $font_min_size;
+            }
+            a {
+              display: block;
+              color: $maincolor;
+              $font_min_size: calc(max(2.4vw, 1.5em));
+              font-size: $font_min_size;
+              font-family: "Dancing Script", cursive;
+              font-weight: 500;
+            }
+          }
         }
         &.show {
           display: block;
@@ -177,7 +189,7 @@ body {
     padding: 0 3vw;
     h3 {
       text-transform: uppercase;
-      line-height: 25px;
+      line-height: calc(max(2.5vw, 25px));
       $font_min_size: calc(max(1.8vw, 1.1em));
       font-size: $font_min_size;
       font-family: "Cooper Hewitt";
