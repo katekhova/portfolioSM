@@ -58,6 +58,35 @@ body {
       width: 37%; }
       .myheader .mainlogo .namelogo h1 {
         margin: 0; }
+  .myheader .menu {
+    position: fixed;
+    right: 5vw;
+    top: 5vh;
+    background-color: rgba(6, 6, 6, 0.2);
+    border-radius: 20%;
+    padding: 5px 10px;
+    width: 60px; }
+    .myheader .menu hr {
+      border: 2px solid #f6eef6;
+      border-radius: 5px; }
+    .myheader .menu .popup {
+      position: relative; }
+      .myheader .menu .popup .navbar {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: -15px;
+        width: 20vw;
+        background-color: rgba(144, 144, 144, 0.7);
+        border-radius: 0 20px 0 20px;
+        padding: 5px 20px; }
+        .myheader .menu .popup .navbar a {
+          display: block;
+          margin: 5px 0;
+          color: #f6eef6;
+          font-size: calc(max(2.4vw, 1.5em)); }
+        .myheader .menu .popup .navbar.show {
+          display: block; }
 
 #home {
   width: 100%; }

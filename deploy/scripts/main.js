@@ -9,7 +9,8 @@ if (document.getElementById("photo_carusel_dot0")) {
 if (document.getElementById("dot0")) {
   document.getElementById("dot0").classList.add("current");
 }
-window.setInterval(showImgSlideshow, 4000);
+//window.setInterval(showImgSlideshow, 4000);
+document.getElementsByClassName("menu")[0].addEventListener("click", openMenu);
 
 function addAllPhotosToHtml(amount) {
   photosConteiner = document.getElementsByClassName("gallery")[0];
@@ -94,5 +95,14 @@ function showImgSlideshow() {
     document.getElementById("photo_carusel_dot0").classList.add("show");
     document.getElementById("dot0").classList.add("current");
     currentPhoto = 0;
+  }
+}
+
+function openMenu() {
+  const classesOfNav = document.getElementsByClassName("navbar")[0].classList;
+  if (classesOfNav.contains("show")) {
+    classesOfNav.remove("show");
+  } else {
+    classesOfNav.add("show");
   }
 }
