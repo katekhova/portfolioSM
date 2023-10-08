@@ -9,7 +9,7 @@ if (document.getElementById("photo_carusel_dot0")) {
 if (document.getElementById("dot0")) {
   document.getElementById("dot0").classList.add("current");
 }
-//window.setInterval(showImgSlideshow, 4000);
+window.setInterval(showImgSlideshow, 4000);
 document.getElementsByClassName("menu")[0].addEventListener("click", openMenu);
 
 function addAllPhotosToHtml(amount) {
