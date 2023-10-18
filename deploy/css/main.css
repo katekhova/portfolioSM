@@ -152,7 +152,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: calc(max(25vh, 100px));
+  height: 100%;
   border-radius: 30px;
   background-color: gray; }
   .myfooter .footerLinks {
@@ -166,17 +166,14 @@ body {
       font-weight: 300; }
   .myfooter .namelogo {
     font-family: "Dancing Script", cursive;
-    position: relative;
     font-size: calc(max(1.8vw, 1.1em));
     text-align: center;
     text-shadow: 2px 0 2px #aa276b, 1px 0 1px #fff, 3px 0 5px #190610, 2px 0 50px rgba(248, 248, 91, 0.8);
     width: 33.3%;
-    height: 100%; }
+    height: 100%;
+    margin: auto 0; }
     .myfooter .namelogo h1 {
-      position: absolute;
-      margin: 0;
-      left: 7%;
-      top: 15%; }
+      margin: 0; }
   .myfooter .socials {
     width: 33.3%;
     padding: 3vh 3vw 3vh 1vw;
@@ -190,3 +187,58 @@ body {
       padding: 1vh 0; }
       .myfooter .socials a .fab {
         font-size: calc(max(2vw, 1.1em)); }
+
+@media only screen and (max-width: 500px) {
+  .myheader {
+    flex-flow: column; }
+    .myheader .buchen {
+      padding: 1vh 1vw; }
+      .myheader .buchen a h1 {
+        font-size: calc(max(9vw, 1.5em));
+        padding: 0; }
+    .myheader .mainlogo {
+      padding: 0 20vw;
+      height: 50%; }
+      .myheader .mainlogo img {
+        position: static;
+        height: 91%;
+        width: 100%;
+        border-radius: 5px; }
+      .myheader .mainlogo .namelogo {
+        position: relative;
+        width: 95%;
+        left: 0;
+        margin: auto;
+        top: -70%;
+        font-size: calc(max(4vw, 0.5em)); }
+    .myheader .menu {
+      top: 14vh; }
+  #home .gallery {
+    width: 100%; }
+    #home .gallery img.photo_carusel {
+      height: 40vh; }
+    #home .gallery .dot_control {
+      margin: 1vh 0; }
+      #home .gallery .dot_control .dot {
+        width: 15px; }
+        #home .gallery .dot_control .dot img {
+          height: 15px; }
+  #home .captionUnderGallery {
+    width: 95%; }
+  .myfooter {
+    flex-flow: column;
+    height: 100%; }
+    .myfooter .footerLinks {
+      flex-flow: row wrap;
+      width: 100%; }
+      .myfooter .footerLinks a {
+        margin: 0 2vw; }
+    .myfooter .namelogo {
+      width: 100%; }
+      .myfooter .namelogo h1 {
+        position: static; }
+    .myfooter .socials {
+      width: 100%;
+      flex-flow: row wrap; }
+      .myfooter .socials a {
+        margin: 0 2vw; } }

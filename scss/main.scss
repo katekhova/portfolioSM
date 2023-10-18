@@ -210,11 +210,10 @@ body {
 }
 
 .myfooter {
-  $footer_height: calc(max(25vh, 100px));
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: $footer_height;
+  height: 100%;
   border-radius: 30px;
   $mainthema_color_light: lighten(
     $color: $mainthema_color,
@@ -236,7 +235,6 @@ body {
 
   .namelogo {
     font-family: "Dancing Script", cursive;
-    position: relative;
     $font_min_size: calc(max(1.8vw, 1.1em));
     font-size: $font_min_size;
     text-align: center;
@@ -245,11 +243,9 @@ body {
       2px 0 50px rgba($color: #f8f85b, $alpha: 0.8);
     width: 33.3%;
     height: 100%;
+    margin: auto 0;
     h1 {
-      position: absolute;
       margin: 0;
-      left: 7%;
-      top: 15%;
     }
   }
   .socials {
@@ -266,6 +262,91 @@ body {
       .fab {
         $font_min_size: calc(max(2vw, 1.1em));
         font-size: $font_min_size;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .myheader {
+    flex-flow: column;
+    .buchen {
+      padding: 1vh 1vw;
+      a h1 {
+        $font_min_size: calc(max(9vw, 1.5em));
+        font-size: $font_min_size;
+        padding: 0;
+      }
+    }
+    .mainlogo {
+      padding: 0 20vw;
+      height: 50%;
+      img {
+        position: static;
+        height: 91%;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .namelogo {
+        position: relative;
+        width: 95%;
+        left: 0;
+        margin: auto;
+        top: -70%;
+        $font_min_size: calc(max(4vw, 0.5em));
+        font-size: $font_min_size;
+      }
+    }
+    .menu {
+      top: 14vh;
+    }
+  }
+
+  #home {
+    .gallery {
+      width: 100%;
+      img {
+        &.photo_carusel {
+          height: 40vh;
+        }
+      }
+      .dot_control {
+        margin: 1vh 0;
+        .dot {
+          $size_dot: 15px;
+          width: $size_dot;
+          & img {
+            height: $size_dot;
+          }
+        }
+      }
+    }
+    .captionUnderGallery {
+      width: 95%;
+    }
+  }
+
+  .myfooter {
+    flex-flow: column;
+    height: 100%;
+    .footerLinks {
+      flex-flow: row wrap;
+      width: 100%;
+      a {
+        margin: 0 2vw;
+      }
+    }
+    .namelogo {
+      width: 100%;
+      h1 {
+        position: static;
+      }
+    }
+    .socials {
+      width: 100%;
+      flex-flow: row wrap;
+      a {
+        margin: 0 2vw;
       }
     }
   }
