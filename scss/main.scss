@@ -29,6 +29,7 @@ body {
   background-color: $mainthema_color;
   color: $maincolor;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 .myheader {
@@ -208,12 +209,46 @@ body {
     }
   }
 }
+#contact {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  min-height: 45vh;
+  margin: 5vh 0;
+  border: $secondary_color solid 5px;
+  border-radius: 20px;
+  .imageContact {
+    width: fit-content;
+    margin: auto auto;
+    img {
+      height: 15vw;
+    }
+  }
+  form {
+    width: 50%;
+    height: fit-content;
+    margin: 5vh 2vw;
+    padding: 10px;
+    $font_min_size: calc(max(1.8vw, 1.1em));
+    //font-size: $font_min_size;
+    text-align: right;
+    * {
+      margin: 1.5vh 0;
+      width: 100%;
+      font-size: $font_min_size;
+    }
+    [type="submit"] {
+      background-color: darken($secondary_color, 10);
+      color: $maincolor;
+    }
+  }
+}
 
 .myfooter {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   border-radius: 30px;
   $mainthema_color_light: lighten(
     $color: $mainthema_color,

@@ -15,7 +15,8 @@
 body {
   background-color: #434343;
   color: #f6eef6;
-  font-family: "Trebuchet MS", Helvetica, sans-serif; }
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  overflow-x: hidden; }
 
 .myheader {
   display: flex;
@@ -148,11 +149,38 @@ body {
       font-size: calc(max(4vw, 2em));
       font-weight: 700; }
 
+#contact {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  min-height: 45vh;
+  margin: 5vh 0;
+  border: #aa276b solid 5px;
+  border-radius: 20px; }
+  #contact .imageContact {
+    width: fit-content;
+    margin: auto auto; }
+    #contact .imageContact img {
+      height: 15vw; }
+  #contact form {
+    width: 50%;
+    height: fit-content;
+    margin: 5vh 2vw;
+    padding: 10px;
+    text-align: right; }
+    #contact form * {
+      margin: 1.5vh 0;
+      width: 100%;
+      font-size: calc(max(1.8vw, 1.1em)); }
+    #contact form [type="submit"] {
+      background-color: #811d51;
+      color: #f6eef6; }
+
 .myfooter {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   border-radius: 30px;
   background-color: gray; }
   .myfooter .footerLinks {
