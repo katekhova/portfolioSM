@@ -64,7 +64,7 @@ body {
     position: fixed;
     right: 5vw;
     top: 5vh;
-    background-color: rgba(6, 6, 6, 0.2);
+    background-color: rgba(6, 6, 6, 0.8);
     border-radius: 20%;
     padding: 5px 10px;
     width: 60px; }
@@ -80,7 +80,7 @@ body {
         right: -15px;
         min-width: fit-content;
         width: 20vw;
-        background-color: rgba(144, 144, 144, 0.9);
+        background-color: #2a2a2a;
         border-radius: 0 20px 0 20px;
         padding: 5px 20px; }
         .myheader .menu .popup .navbar ul li {
@@ -96,85 +96,6 @@ body {
             font-weight: 500; }
         .myheader .menu .popup .navbar.show {
           display: block; }
-
-#home {
-  width: 100%; }
-  #home .gallery {
-    width: 80%;
-    margin: 5vh auto; }
-    #home .gallery img.photo_carusel {
-      width: 100%;
-      height: 90vh;
-      object-fit: cover;
-      object-position: center 60%;
-      border-radius: 20px;
-      display: none; }
-    #home .gallery img.show {
-      display: block; }
-    #home .gallery .dot_control {
-      display: flex;
-      flex-flow: row wrap;
-      width: 100%;
-      margin: 3vh 0;
-      justify-content: center;
-      justify-self: center; }
-      #home .gallery .dot_control .dot {
-        width: 20px;
-        margin: 0.5vh 0.9vw; }
-        #home .gallery .dot_control .dot img {
-          opacity: 0.5;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 50%;
-          height: 20px; }
-        #home .gallery .dot_control .dot .current {
-          opacity: 1; }
-  #home .captionUnderGallery {
-    width: 80%;
-    margin: 5vh auto;
-    padding: 0 3vw; }
-    #home .captionUnderGallery h3 {
-      text-transform: uppercase;
-      line-height: calc(max(2.5vw, 25px));
-      font-size: calc(max(1.8vw, 1.1em));
-      font-family: "Cooper Hewitt";
-      font-weight: 500;
-      letter-spacing: 2px; }
-    #home .captionUnderGallery h1 {
-      text-align: center;
-      color: #f6eef6;
-      font-family: Ubuntu;
-      margin: 0;
-      letter-spacing: 1px;
-      font-size: calc(max(4vw, 2em));
-      font-weight: 700; }
-
-#contact {
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  min-height: 45vh;
-  margin: 5vh 0;
-  border: #aa276b solid 5px;
-  border-radius: 20px; }
-  #contact .imageContact {
-    width: fit-content;
-    margin: auto auto; }
-    #contact .imageContact img {
-      height: 15vw; }
-  #contact form {
-    width: 50%;
-    height: fit-content;
-    margin: 5vh 2vw;
-    padding: 10px;
-    text-align: right; }
-    #contact form * {
-      margin: 1.5vh 0;
-      width: 100%;
-      font-size: calc(max(1.8vw, 1.1em)); }
-    #contact form [type="submit"] {
-      background-color: #811d51;
-      color: #f6eef6; }
 
 .myfooter {
   display: flex;

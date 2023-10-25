@@ -1,0 +1,37 @@
+@import "setcolors";
+
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 45vh;
+  margin: 5vh 0;
+  border: rgba($color: $maincolor, $alpha: 0.7) solid 5px;
+  border-radius: 20px;
+  .imageContact {
+    width: fit-content;
+    margin: auto auto;
+    img {
+      height: 25vw;
+      max-height: 200px;
+    }
+  }
+  form {
+    width: fit-content;
+    min-width: 50%;
+    height: fit-content;
+    margin: 5vh auto;
+    padding: 10px;
+    text-align: right;
+    * {
+      margin: 1.5vh 0;
+      width: 100%;
+      $font_min_size: calc(max(1.8vw, 1.1em));
+      font-size: $font_min_size;
+    }
+    [type="submit"] {
+      background-color: rgba($color: darken(#e5ecec, 10), $alpha: 0.3);
+      color: $maincolor;
+    }
+  }
+}

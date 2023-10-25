@@ -1,12 +1,4 @@
-$mainthema_color: rgb(67, 67, 67);
-$secondary_color: #aa276b;
-@function complement_color($color) {
-  @if (lightness($color) > 40) {
-    @return #000;
-  } @else {
-    @return #f6eef6;
-  }
-}
+@import "setcolors";
 
 @font-face {
   font-family: "Cooper Hewitt";
@@ -16,7 +8,6 @@ $secondary_color: #aa276b;
   font-family: "Cheque";
   src: url("../fonts/Cheque Regular 400.otf");
 }
-$maincolor: complement_color($mainthema_color);
 
 * {
   box-sizing: border-box;
@@ -96,7 +87,7 @@ body {
     position: fixed;
     right: 5vw;
     top: 5vh;
-    background-color: rgba($mainthema_color_dark, 0.2);
+    background-color: rgba($mainthema_color_dark, 0.8);
     border-radius: 20%;
     padding: 5px 10px;
     width: 60px;
@@ -113,7 +104,7 @@ body {
         right: -15px;
         min-width: fit-content;
         width: 20vw;
-        background-color: rgba(lighten($mainthema_color, 30), $alpha: 0.9);
+        background-color: rgba(darken($mainthema_color, 10), $alpha: 1);
         border-radius: 0 20px 0 20px;
         padding: 5px 20px;
         ul {
@@ -138,108 +129,6 @@ body {
           display: block;
         }
       }
-    }
-  }
-}
-
-#home {
-  width: 100%;
-  .gallery {
-    width: 80%;
-    margin: 5vh auto;
-    img {
-      &.photo_carusel {
-        width: 100%;
-        height: 90vh;
-        object-fit: cover;
-        object-position: center 60%;
-        border-radius: 20px;
-        display: none;
-      }
-      &.show {
-        display: block;
-      }
-    }
-    .dot_control {
-      display: flex;
-      flex-flow: row wrap;
-      width: 100%;
-      margin: 3vh 0;
-      justify-content: center;
-      justify-self: center;
-      .dot {
-        $size_dot: 20px;
-        width: $size_dot;
-        margin: 0.5vh 0.9vw;
-        & img {
-          opacity: 0.5;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 50%;
-          height: $size_dot;
-        }
-        & .current {
-          opacity: 1;
-        }
-      }
-    }
-  }
-  .captionUnderGallery {
-    width: 80%;
-    margin: 5vh auto;
-    padding: 0 3vw;
-    h3 {
-      text-transform: uppercase;
-      line-height: calc(max(2.5vw, 25px));
-      $font_min_size: calc(max(1.8vw, 1.1em));
-      font-size: $font_min_size;
-      font-family: "Cooper Hewitt";
-      font-weight: 500;
-      letter-spacing: 2px;
-    }
-    h1 {
-      text-align: center;
-      color: $maincolor;
-      font-family: Ubuntu;
-      margin: 0;
-      letter-spacing: 1px;
-      $font_min_size: calc(max(4vw, 2em));
-      font-size: $font_min_size;
-      font-weight: 700;
-    }
-  }
-}
-#contact {
-  display: flex;
-  flex-flow: row;
-  width: 100%;
-  min-height: 45vh;
-  margin: 5vh 0;
-  border: $secondary_color solid 5px;
-  border-radius: 20px;
-  .imageContact {
-    width: fit-content;
-    margin: auto auto;
-    img {
-      height: 15vw;
-    }
-  }
-  form {
-    width: 50%;
-    height: fit-content;
-    margin: 5vh 2vw;
-    padding: 10px;
-    $font_min_size: calc(max(1.8vw, 1.1em));
-    //font-size: $font_min_size;
-    text-align: right;
-    * {
-      margin: 1.5vh 0;
-      width: 100%;
-      font-size: $font_min_size;
-    }
-    [type="submit"] {
-      background-color: darken($secondary_color, 10);
-      color: $maincolor;
     }
   }
 }

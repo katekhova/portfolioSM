@@ -1,0 +1,12 @@
+$mainthema_color: rgb(67, 67, 67);
+//$mainthema_color: rgb(244, 244, 244);
+$secondary_color: #aa276b;
+//$secondary_color: #b09b0f;
+@function complement_color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #f6eef6;
+  }
+}
+$maincolor: complement_color($mainthema_color);

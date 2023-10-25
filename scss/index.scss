@@ -1,0 +1,69 @@
+@import "setcolors";
+
+#home {
+  width: 100%;
+  .gallery {
+    width: 80%;
+    margin: 5vh auto;
+    img {
+      &.photo_carusel {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+        object-position: center 60%;
+        border-radius: 20px;
+        display: none;
+      }
+      &.show {
+        display: block;
+      }
+    }
+    .dot_control {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      margin: 3vh 0;
+      justify-content: center;
+      justify-self: center;
+      .dot {
+        $size_dot: 20px;
+        width: $size_dot;
+        margin: 0.5vh 0.9vw;
+        & img {
+          opacity: 0.5;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+          height: $size_dot;
+        }
+        & .current {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .captionUnderGallery {
+    width: 80%;
+    margin: 5vh auto;
+    padding: 0 3vw;
+    h3 {
+      text-transform: uppercase;
+      line-height: calc(max(2.5vw, 25px));
+      $font_min_size: calc(max(1.8vw, 1.1em));
+      font-size: $font_min_size;
+      font-family: "Cooper Hewitt";
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    h1 {
+      text-align: center;
+      color: $maincolor;
+      font-family: Ubuntu;
+      margin: 0;
+      letter-spacing: 1px;
+      $font_min_size: calc(max(4vw, 2em));
+      font-size: $font_min_size;
+      font-weight: 700;
+    }
+  }
+}

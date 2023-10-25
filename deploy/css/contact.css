@@ -1,0 +1,28 @@
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  min-height: 45vh;
+  margin: 5vh 0;
+  border: rgba(246, 238, 246, 0.7) solid 5px;
+  border-radius: 20px; }
+  #contact .imageContact {
+    width: fit-content;
+    margin: auto auto; }
+    #contact .imageContact img {
+      height: 25vw;
+      max-height: 200px; }
+  #contact form {
+    width: fit-content;
+    min-width: 50%;
+    height: fit-content;
+    margin: 5vh auto;
+    padding: 10px;
+    text-align: right; }
+    #contact form * {
+      margin: 1.5vh 0;
+      width: 100%;
+      font-size: calc(max(1.8vw, 1.1em)); }
+    #contact form [type="submit"] {
+      background-color: rgba(200, 214, 214, 0.3);
+      color: #f6eef6; }
