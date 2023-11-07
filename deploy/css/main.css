@@ -29,13 +29,14 @@ iframe {
   border-radius: 30px;
   background-color: #060606; }
   .myheader .buchen {
-    padding: 3vh 2vw; }
+    padding: 3vh 2vw;
+    width: 25%; }
     .myheader .buchen a h1 {
       padding: 5% 10%;
       margin: 0;
       color: #f6eef6;
       text-align: center;
-      font-size: calc(max(2vw, 0.7em));
+      font-size: calc(max(2vw, 1em));
       font-family: "Cheque", sans-serif;
       font-weight: 100; }
     .myheader .buchen a:hover, .myheader .buchen a:active {
@@ -148,7 +149,8 @@ iframe {
   .myheader {
     flex-flow: column; }
     .myheader .buchen {
-      padding: 1vh 1vw; }
+      padding: 1vh 1vw;
+      width: auto; }
       .myheader .buchen a h1 {
         font-size: calc(max(9vw, 1.5em));
         padding: 0; }
