@@ -20,14 +20,14 @@
       justify-content: center;
       justify-self: center; }
       #home .gallery .dot_control .dot {
-        width: 20px;
+        width: calc(max(15px, 1.5vw));
         margin: 0.5vh 0.9vw; }
         #home .gallery .dot_control .dot img {
           opacity: 0.5;
           width: 100%;
           object-fit: cover;
           border-radius: 50%;
-          height: 20px; }
+          height: calc(max(15px, 1.5vw)); }
         #home .gallery .dot_control .dot .current {
           opacity: 1; }
   #home .captionUnderGallery {

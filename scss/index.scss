@@ -26,7 +26,7 @@
       justify-content: center;
       justify-self: center;
       .dot {
-        $size_dot: 20px;
+        $size_dot: calc(max(15px, 1.5vw));
         width: $size_dot;
         margin: 0.5vh 0.9vw;
         & img {

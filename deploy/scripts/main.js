@@ -1,4 +1,4 @@
-document.getElementsByClassName("menu")[0].addEventListener("click", openMenu);
+//document.getElementsByClassName("menu")[0].addEventListener("click", openMenu);
 
 function openMenu() {
   const classesOfNav = document.getElementsByClassName("navbar")[0].classList;
