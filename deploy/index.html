@@ -14,33 +14,11 @@
     <title>Maryna Smetana Photoshoots</title>
   </head>
   <body>
-    <header class="myheader">
-      <div class="buchen">
-        <a href="contact.html"><h1>BERATUNG BUCHEN</h1></a>
-      </div>
-      <div class="mainlogo">
-        <img
-          src="media/x100v_overview_g-1.png"
-          alt="Photocamera Background Image"
-        />
-        <div class="namelogo"><h1>Maryna Smetana</h1></div>
-      </div>
+    <iframe
+      src="header.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
 
-      <nav class="menu">
-        <hr />
-        <hr />
-        <hr />
-        <div class="popup">
-          <div class="navbar">
-            <ul>
-              <li><a href="#!">Home</a></li>
-              <li><a href="#!">Menschen</a></li>
-              <li><a href="#!">Kontakt mich</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
     <main id="home">
       <div class="gallery"></div>
       <div class="captionUnderGallery">
@@ -53,23 +31,9 @@
         <a href="contact.html"><h1>JETZT BERATEN LASSEN</h1></a>
       </div>
     </main>
-    <footer class="myfooter">
-      <div class="footerLinks">
-        <a href="index.html">HOME</a>
-        <a href="contact.html">Kontakt Mich</a>
-        <a href="menschen.html">Menschen</a>
-      </div>
-      <div class="namelogo"><h1>Maryna Smetana</h1></div>
-      <div class="socials">
-        <a href="#!"
-          ><span class="fab fa-instagram"></span>&nbsp;&nbsp;Instagram</a
-        >
-        <a href="#!"><span class="fab fa-whatsapp"></span>&nbsp;WhatsApp</a>
-        <a href="#!"
-          ><span class="fab fa-telegram-plane"></span
-          >&nbsp;&nbsp;&nbsp;Telegram</a
-        >
-      </div>
-    </footer>
+    <iframe
+      src="footer.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
   </body>
 </html>
