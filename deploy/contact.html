@@ -28,13 +28,20 @@
         <input
           type="hidden"
           name="subject"
+          id="subject"
           data-remove-prefix
-          value="Fotoshooting-Angebot von {{name}} für {{type}}!"
+          value="Fotoshooting-Angebot von !"
         />
         <label for="email">Ihre E-Mail Adresse:</label><br />
         <input type="email" name="email" id="email" required /><br />
         <label for="name">Ihr Name:</label><br />
-        <input type="text" name="name" id="name" required /><br />
+        <input
+          oninput="(function(value) {document.getElementById('subject').value+=value})"
+          type="text"
+          name="name"
+          id="name"
+          required
+        /><br />
         <label for="type">Wählen Sie Art der Fotoshooting</label><br />
         <select name="type" id="type">
           <option value="Porträt">Porträt</option>
