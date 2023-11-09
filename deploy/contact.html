@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <script defer="true" src="scripts/main.js"></script>
+    <script defer="true" src="scripts/form.js"></script>
     <title>Maryna Smetana Photoshoots</title>
   </head>
   <body>
@@ -30,13 +31,13 @@
           name="subject"
           id="subject"
           data-remove-prefix
-          value="Fotoshooting-Angebot von !"
+          value="Fotoshooting-Anfrage"
         />
         <label for="email">Ihre E-Mail Adresse:</label><br />
         <input type="email" name="email" id="email" required /><br />
         <label for="name">Ihr Name:</label><br />
         <input
-          oninput="(function(value) {document.getElementById('subject').value+=value})"
+          onchange="updateSubject(value)"
           type="text"
           name="name"
           id="name"
