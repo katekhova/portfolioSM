@@ -29,6 +29,7 @@
         $size_dot: calc(max(15px, 1.5vw));
         width: $size_dot;
         margin: 0.5vh 0.9vw;
+        cursor: pointer;
         & img {
           opacity: 0.5;
           width: 100%;

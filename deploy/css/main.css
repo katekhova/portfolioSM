@@ -12,6 +12,11 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+a {
+  all: unset;
+  cursor: pointer;
+  width: fit-content; }
+
 body {
   background-color: #434343;
   color: #f6eef6;
@@ -72,9 +77,11 @@ iframe {
     border-radius: 20%;
     padding: 5px 10px;
     width: 60px; }
-    .myheader .menu hr {
-      border: 2px solid #f6eef6;
-      border-radius: 5px; }
+    .myheader .menu .lines {
+      cursor: pointer; }
+      .myheader .menu .lines hr {
+        border: 2px solid #f6eef6;
+        border-radius: 5px; }
     .myheader .menu .popup {
       position: relative; }
       .myheader .menu .popup .navbar {
@@ -89,17 +96,15 @@ iframe {
         padding: 5px 20px; }
         .myheader .menu .popup .navbar ul {
           padding-left: calc(max(2.8vw, 20px)); }
-          .myheader .menu .popup .navbar ul li {
-            margin: 5px 0; }
-            .myheader .menu .popup .navbar ul li::marker {
-              content: "▶ ";
-              font-size: calc(max(2.4vw, 1.5em)); }
-            .myheader .menu .popup .navbar ul li a {
-              display: block;
-              color: #f6eef6;
-              font-size: calc(max(2.4vw, 1.5em));
-              font-family: "Dancing Script", cursive;
-              font-weight: 500; }
+          .myheader .menu .popup .navbar ul a {
+            margin: 5px 0;
+            display: block;
+            color: #f6eef6;
+            font-size: calc(max(2.4vw, 1.5em));
+            font-family: "Dancing Script", cursive;
+            font-weight: 500; }
+            .myheader .menu .popup .navbar ul a li::marker {
+              content: "▶ "; }
         .myheader .menu .popup .navbar.show {
           display: block; }
 
@@ -136,13 +141,13 @@ iframe {
     display: flex;
     flex-flow: column wrap;
     text-align: right; }
-    .myfooter .socials a {
+    .myfooter .socials div {
       color: #f6eef6;
       font-family: Ubuntu;
       font-weight: 300;
       font-size: calc(max(1.6vw, 1em));
       padding: 1vh 0; }
-      .myfooter .socials a .fab {
+      .myfooter .socials div .fab {
         font-size: calc(max(2vw, 1.1em)); }
 
 @media only screen and (max-width: 500px) {

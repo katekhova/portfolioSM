@@ -13,6 +13,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+a {
+  all: unset;
+  cursor: pointer;
+  width: fit-content;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=Ubuntu:wght@400;700&display=swap");
 
@@ -94,9 +99,12 @@ iframe {
     border-radius: 20%;
     padding: 5px 10px;
     width: 60px;
-    hr {
-      border: 2px solid $maincolor;
-      border-radius: 5px;
+    .lines {
+      cursor: pointer;
+      hr {
+        border: 2px solid $maincolor;
+        border-radius: 5px;
+      }
     }
     .popup {
       position: relative;
@@ -112,23 +120,23 @@ iframe {
         padding: 5px 20px;
         ul {
           padding-left: calc(max(2.8vw, 20px));
-          li {
+          a {
             margin: 5px 0;
-            &::marker {
-              content: "▶ ";
-              $font_min_size: calc(max(2.4vw, 1.5em));
-              font-size: $font_min_size;
-            }
-            a {
-              display: block;
-              color: $maincolor;
-              $font_min_size: calc(max(2.4vw, 1.5em));
-              font-size: $font_min_size;
-              font-family: "Dancing Script", cursive;
-              font-weight: 500;
+            display: block;
+            color: $maincolor;
+            $font_min_size: calc(max(2.4vw, 1.5em));
+            font-size: $font_min_size;
+            font-family: "Dancing Script", cursive;
+            font-weight: 500;
+
+            li {
+              &::marker {
+                content: "▶ ";
+              }
             }
           }
         }
+
         &.show {
           display: block;
         }
@@ -184,7 +192,7 @@ iframe {
     display: flex;
     flex-flow: column wrap;
     text-align: right;
-    a {
+    div {
       color: $maincolor;
       font-family: Ubuntu;
       font-weight: 300;

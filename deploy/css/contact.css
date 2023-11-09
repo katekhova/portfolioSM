@@ -25,4 +25,5 @@
       font-size: calc(max(1.8vw, 1.1em)); }
     #contact form [type="submit"] {
       background-color: rgba(200, 214, 214, 0.3);
-      color: #f6eef6; }
+      color: #f6eef6;
+      cursor: pointer; }

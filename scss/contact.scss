@@ -32,6 +32,7 @@
     [type="submit"] {
       background-color: rgba($color: darken(#e5ecec, 10), $alpha: 0.3);
       color: $maincolor;
+      cursor: pointer;
     }
   }
 }

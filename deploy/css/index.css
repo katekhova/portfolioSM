@@ -21,7 +21,8 @@
       justify-self: center; }
       #home .gallery .dot_control .dot {
         width: calc(max(15px, 1.5vw));
-        margin: 0.5vh 0.9vw; }
+        margin: 0.5vh 0.9vw;
+        cursor: pointer; }
         #home .gallery .dot_control .dot img {
           opacity: 0.5;
           width: 100%;
