@@ -150,7 +150,7 @@ iframe {
       .myfooter .socials div .fab {
         font-size: calc(max(2vw, 1.1em)); }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 433px) {
   .myheader {
     flex-flow: column; }
     .myheader .buchen {
