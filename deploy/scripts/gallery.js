@@ -1,4 +1,4 @@
-const amountOfPhotos = 9;
+const amountOfPhotos = 11;
 let currentPhoto = 0;
 addAllPhotosToHtml(amountOfPhotos);
 addAllDotsToHtml(amountOfPhotos);
@@ -6,6 +6,7 @@ addDotEventListener(amountOfPhotos);
 if (document.getElementById("photo_carusel_dot0")) {
   document.getElementById("photo_carusel_dot0").classList.add("show");
 }
+setWidth();
 if (document.getElementById("dot0")) {
   document.getElementById("dot0").classList.add("current");
 }
@@ -31,7 +32,7 @@ function addAllDotsToHtml(amount) {
 function createImgElement(i) {
   let imgTag = document.createElement("img");
   imgTag.id = "photo_carusel_dot" + i;
-  imgTag.src = "media/imgGal (" + i + ").png";
+  imgTag.src = "media/imgGal (" + i + ").jpg";
   imgTag.alt = "Photo for gallery";
   imgTag.classList.add("photo_carusel");
   return imgTag;
@@ -59,11 +60,16 @@ function showImg() {
     document.getElementById("photo_carusel_dot" + i).classList.remove("show");
   }
   document.getElementById("photo_carusel_" + this.id).classList.add("show");
+  setWidth();
   for (let i = 0; i < amountOfPhotos; i++) {
     document.getElementById("dot" + i).classList.remove("current");
   }
   this.classList.add("current");
-  currentPhoto = Number(this.id.slice(-1));
+  if (!isNaN(this.id.slice(-2))) {
+    currentPhoto = Number(this.id.slice(-2));
+  } else {
+    currentPhoto = Number(this.id.slice(-1));
+  }
 }
 
 function showImgSlideshow() {
@@ -81,5 +87,19 @@ function showImgSlideshow() {
     document.getElementById("photo_carusel_dot0").classList.add("show");
     document.getElementById("dot0").classList.add("current");
     currentPhoto = 0;
+  }
+  setWidth();
+}
+
+function setWidth() {
+  let img = document.getElementsByClassName("photo_carusel show")[0];
+  if (img.naturalWidth > img.naturalHeight) {
+    let imgContainer = document.getElementsByClassName("imagesGallery")[0];
+    imgContainer.style.maxWidth = "100%";
+    //img.style.height = "90vh";
+  } else {
+    let imgContainer = document.getElementsByClassName("imagesGallery")[0];
+    imgContainer.style.maxWidth = "calc(max(400px,30vw))";
+    //img.style.height = "100vh";
   }
 }
