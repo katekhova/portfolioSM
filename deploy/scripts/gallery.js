@@ -12,18 +12,18 @@ if (document.getElementById("dot0")) {
 //window.setInterval(showImgSlideshow, 4000);
 
 function addAllPhotosToHtml(amount) {
-  photosConteiner = document.getElementsByClassName("gallery")[0];
-  for (let i = 0; i < amount; i++) {
+  photosConteiner = document.getElementsByClassName("imagesGallery")[0];
+  for (let i = 3; i < amount; i++) {
     photosConteiner.appendChild(createImgElement(i));
   }
-  dotsConteiner = document.createElement("div");
-  dotsConteiner.classList.add("dot_control");
-  photosConteiner.appendChild(dotsConteiner);
+  //dotsConteiner = document.createElement("div");
+  //dotsConteiner.classList.add("dot_control");
+  //photosConteiner.appendChild(dotsConteiner);
 }
 
 function addAllDotsToHtml(amount) {
   dotsConteiner = document.getElementsByClassName("dot_control")[0];
-  for (let i = 0; i < amount; i++) {
+  for (let i = 3; i < amount; i++) {
     dotsConteiner.appendChild(createDotElement(i));
   }
 }
