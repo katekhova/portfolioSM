@@ -11,7 +11,10 @@
     margin: auto auto; }
     #contact .imageContact img {
       height: 25vw;
-      max-height: 200px; }
+      max-height: 200px;
+      margin-top: 7px;
+      border-radius: 20px;
+      background-color: #60707c; }
   #contact form {
     width: fit-content;
     min-width: 50%;

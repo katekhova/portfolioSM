@@ -1,4 +1,4 @@
-const amountOfPhotos = 11;
+const amountOfPhotos = 15;
 let currentPhoto = 0;
 addAllPhotosToHtml(amountOfPhotos);
 addAllDotsToHtml(amountOfPhotos);
@@ -32,7 +32,7 @@ function addAllDotsToHtml(amount) {
 function createImgElement(i) {
   let imgTag = document.createElement("img");
   imgTag.id = "photo_carusel_dot" + i;
-  imgTag.src = "media/imgGal (" + i + ").jpg";
+  imgTag.src = "media/gallery/imgGal (" + i + ").JPG";
   imgTag.alt = "Photo for gallery";
   imgTag.classList.add("photo_carusel");
   return imgTag;
