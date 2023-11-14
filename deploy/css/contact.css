@@ -12,7 +12,7 @@
     #contact .imageContact img {
       height: 25vw;
       max-height: 200px;
-      margin-top: 7px;
+      margin-top: 3vh;
       border-radius: 20px;
       background-color: #60707c; }
   #contact form {
@@ -22,10 +22,50 @@
     margin: 5vh auto;
     padding: 10px;
     text-align: right; }
+    #contact form input,
+    #contact form select,
+    #contact form textarea {
+      background-color: #3b3b3b;
+      color: #f6eef6;
+      border-radius: 5px;
+      border: 1px solid rgba(96, 112, 124, 0.7);
+      margin: 4px;
+      padding: 2px 5px; }
+      #contact form input:hover,
+      #contact form select:hover,
+      #contact form textarea:hover {
+        box-shadow: 2px 2px 6px #333c43; }
     #contact form * {
-      margin: 1.5vh 0;
+      margin: 0.5vh 0;
       width: 100%;
       font-size: calc(max(1.8vw, 1.1em)); }
+    #contact form .person {
+      display: inline-flex;
+      align-items: center; }
+      #contact form .person .sex {
+        padding: 0 2% 0 0; }
+        #contact form .person .sex select {
+          font-size: calc(max(2.2vw, 1.05em)); }
+    #contact form fieldset {
+      border: 1px #60707c solid; }
+      #contact form fieldset legend {
+        width: fit-content;
+        padding: 0 10px; }
+    #contact form .radio {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 0; }
+      #contact form .radio [type="radio"] {
+        height: calc(max(1.5vw, 1em));
+        width: 6vw;
+        margin-left: 3vw;
+        accent-color: #aa276b; }
+        #contact form .radio [type="radio"]:hover {
+          box-shadow: none; }
+      #contact form .radio span {
+        font-size: calc(max(2vw, 0.8em)); }
+    #contact form textarea {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
     #contact form [type="submit"] {
       background-color: rgba(200, 214, 214, 0.3);
       color: #f6eef6;

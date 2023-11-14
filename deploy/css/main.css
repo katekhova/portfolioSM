@@ -129,7 +129,7 @@ iframe {
     font-family: "Dancing Script", cursive;
     font-size: calc(max(1.8vw, 1.1em));
     text-align: center;
-    text-shadow: 2px 0 2px #aa276b, 1px 0 1px #fff, 3px 0 5px #190610, 2px 0 50px rgba(248, 248, 91, 0.8);
+    text-shadow: 2px 0 2px #aa276b, 1px 0 1px #fff, 3px 0 5px #190610, 2px 0 50px #60707c;
     width: 33.3%;
     height: 100%;
     margin: auto 0; }

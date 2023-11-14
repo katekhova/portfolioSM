@@ -14,9 +14,9 @@
     img {
       height: 25vw;
       max-height: 200px;
-      margin-top: 7px;
+      margin-top: 3vh;
       border-radius: 20px;
-      background-color: darken($color: #60707c, $amount: 0);
+      background-color: darken($color: $secondary_color, $amount: 0);
     }
   }
   form {
@@ -26,11 +26,67 @@
     margin: 5vh auto;
     padding: 10px;
     text-align: right;
+
+    input,
+    select,
+    textarea {
+      background-color: darken($color: $mainthema_color, $amount: 3);
+      color: $maincolor;
+      border-radius: 5px;
+      border: 1px solid rgba($color: $secondary_color, $alpha: 0.7);
+      margin: 4px;
+      padding: 2px 5px;
+      &:hover {
+        box-shadow: 2px 2px 6px darken($color: $secondary_color, $amount: 20);
+      }
+    }
     * {
-      margin: 1.5vh 0;
+      margin: 0.5vh 0;
       width: 100%;
       $font_min_size: calc(max(1.8vw, 1.1em));
       font-size: $font_min_size;
+    }
+    .person {
+      display: inline-flex;
+      align-items: center;
+      .sex {
+        padding: 0 2% 0 0;
+
+        select {
+          $font_min_size: calc(max(2.2vw, 1.05em));
+          font-size: $font_min_size;
+        }
+      }
+    }
+    fieldset {
+      border: 1px $secondary_color solid;
+      legend {
+        width: fit-content;
+        padding: 0 10px;
+      }
+    }
+    .radio {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 0;
+
+      [type="radio"] {
+        height: calc(max(1.5vw, 1em));
+        width: 6vw;
+        margin-left: 3vw;
+        accent-color: $accent;
+        &:hover {
+          box-shadow: none;
+        }
+      }
+      span {
+        $font_min_size: calc(max(2vw, 0.8em));
+        font-size: $font_min_size;
+      }
+    }
+    textarea {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
     }
     [type="submit"] {
       background-color: rgba($color: darken(#e5ecec, 10), $alpha: 0.3);

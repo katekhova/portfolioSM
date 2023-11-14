@@ -58,7 +58,7 @@ iframe {
       }
       &:hover,
       &:active {
-        text-shadow: 3px 2px 2px $secondary_color;
+        text-shadow: 3px 2px 2px $accent;
       }
     }
   }
@@ -81,8 +81,8 @@ iframe {
       $font_min_size: calc(max(1.8vw, 1.1em));
       font-size: $font_min_size;
       text-align: center;
-      text-shadow: 1.4px 0 1px $secondary_color,
-        2px 0 1px darken($color: $secondary_color, $amount: 30);
+      text-shadow: 1.4px 0 1px $accent,
+        2px 0 1px darken($color: $accent, $amount: 30);
       left: 14.5%;
       top: 10%;
       width: 37%;
@@ -176,9 +176,9 @@ iframe {
     $font_min_size: calc(max(1.8vw, 1.1em));
     font-size: $font_min_size;
     text-align: center;
-    text-shadow: 2px 0 2px $secondary_color, 1px 0 1px #fff,
-      3px 0 5px darken($color: $secondary_color, $amount: 35),
-      2px 0 50px rgba($color: #f8f85b, $alpha: 0.8);
+    text-shadow: 2px 0 2px $accent, 1px 0 1px #fff,
+      3px 0 5px darken($color: $accent, $amount: 35),
+      2px 0 50px rgba($color: $secondary_color, $alpha: 1);
     width: 33.3%;
     height: 100%;
     margin: auto 0;

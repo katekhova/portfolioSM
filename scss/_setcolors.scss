@@ -1,7 +1,8 @@
 $mainthema_color: rgb(67, 67, 67);
-//$mainthema_color: rgb(244, 244, 244);
-$secondary_color: #aa276b;
-//$secondary_color: #b09b0f;
+//$mainthema_color: rgb(255, 240, 240);
+$secondary_color: #60707c;
+$accent: #aa276b;
+//$accent: #b09b0f;
 @function complement_color($color) {
   @if (lightness($color) > 40) {
     @return #000;

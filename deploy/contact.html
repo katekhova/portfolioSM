@@ -25,6 +25,7 @@
       <div class="imageContact">
         <img src="media/Notes-removebg-preview.png" alt="Contact Us!" />
       </div>
+
       <form action="" method="post" autocomplete="on" netlify>
         <input
           type="hidden"
@@ -33,27 +34,80 @@
           data-remove-prefix
           value="Fotoshooting-Anfrage"
         />
-        <label for="email">Ihre E-Mail Adresse:</label><br />
-        <input type="email" name="email" id="email" required /><br />
-        <label for="name">Ihr Name:</label><br />
+
+        <label for="email">E-Mail Adresse *</label><br />
         <input
-          onchange="updateSubject(value)"
-          type="text"
-          name="name"
-          id="name"
+          type="email"
+          name="email"
+          id="email"
           required
+          autocomplete="email"
         /><br />
-        <label for="type">Wählen Sie die Art der Fotosession</label><br />
-        <select name="type" id="type">
+
+        <div class="person">
+          <!--Flex Item 1-->
+          <div class="sex">
+            <label for="sex">Anrede *</label>
+
+            <select name="sex" id="sex" required>
+              <option value="">Wählen Sie...</option>
+              <option value="Frau">Frau</option>
+              <option value="Herr">Herr</option>
+              <option value="divers">divers</option>
+            </select>
+          </div>
+          <!--Flex Item 2-->
+          <div class="name">
+            <label for="name">Name *</label><br />
+            <input
+              onchange="updateSubject(value)"
+              type="text"
+              name="name"
+              id="name"
+              required
+              autocomplete="name"
+            /><br />
+          </div>
+        </div>
+        <fieldset>
+          <legend>Art des Fotoshootings</legend>
+
+          <label class="radio" for="porträt">
+            <span>Porträt</span>
+            <input
+              type="radio"
+              name="type"
+              id="porträt"
+              value="Porträt"
+              checked
+            /> </label
+          ><br />
+
+          <label class="radio" for="veranstaltung">
+            <span>Veranstaltung</span>
+            <input
+              type="radio"
+              name="type"
+              id="veranstaltung"
+              value="Veranstaltung"
+            /> </label
+          ><br />
+
+          <label class="radio" for="konzert">
+            <span>Konzert</span>
+            <input type="radio" name="type" id="konzert" value="Konzert" />
+          </label>
+
+          <!-- <select name="type" id="type">
           <option value="Porträt">Porträt</option>
           <option value="Veranstaltung">Veranstaltung</option>
-          <option value="Concert">Concert</option></select
-        ><br />
-        <label for="message"
-          >Ihre Wünsche, z.B. Ort, Termin, Idee fürs Fotoshooting</label
-        ><br />
+          <option value="Konzert">Konzert</option></select
+          >-->
+        </fieldset>
+        <br />
+        <label for="message">Ihre Wünsche, z.B. Ort, Termin, Idee</label><br />
         <textarea name="message" id="message" rows="5">
-Ich schlage als Termin vor:</textarea
+          Ich schlage als Termin vor:</textarea
         >
         <input type="submit" value="Senden" />
       </form>
