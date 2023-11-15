@@ -266,7 +266,16 @@ iframe {
       width: 95%;
     }
   }
-
+  .stock {
+    flex-flow: column;
+    .image {
+      width: 97%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
   .myfooter {
     flex-flow: column;
     height: 100%;

@@ -1,0 +1,17 @@
+.category h1 {
+  font-size: calc(max(5.4vw, 3.375em));
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  text-align: center; }
+
+.stock {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center; }
+  .stock .image {
+    height: 100%;
+    margin: 2vh 2vw; }
+    .stock .image img {
+      height: 29.3vh;
+      object-fit: cover; }

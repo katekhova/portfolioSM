@@ -188,6 +188,13 @@ iframe {
           height: 15px; }
   #home .captionUnderGallery {
     width: 95%; }
+  .stock {
+    flex-flow: column; }
+    .stock .image {
+      width: 97%; }
+      .stock .image img {
+        width: 100%;
+        height: auto; }
   .myfooter {
     flex-flow: column;
     height: 100%; }
