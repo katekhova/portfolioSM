@@ -19,8 +19,21 @@
     height: 100%;
     margin: 2vh 2vw;
     img {
-      height: 29.3vh;
+      height: 46vh;
       object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .stock {
+    flex-flow: column;
+    .image {
+      width: 97%;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }

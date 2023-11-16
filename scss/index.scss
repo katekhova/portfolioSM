@@ -72,3 +72,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 433px) {
+  #home {
+    .captionUnderGallery {
+      width: 95%;
+    }
+  }
+}
