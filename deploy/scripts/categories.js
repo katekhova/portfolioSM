@@ -1,20 +1,20 @@
-let amountOfPhotos = 28;
+let amountOfPhotos = 0;
 
-addAllPhotosToHtml(amountOfPhotos);
+addAllPhotosToHtml();
 
-function addAllPhotosToHtml(amount) {
+function addAllPhotosToHtml() {
   let photosConteiner = document.getElementsByClassName("stock")[0];
-  for (let i = 3; i < amount; i++) {
-    photosConteiner.appendChild(createImgElement(i));
+  let dir = photosConteiner.attributes.getNamedItem("category").value;
+  amountOfPhotos = Number(
+    photosConteiner.attributes.getNamedItem("amount").value
+  );
+  for (let i = 3; i < amountOfPhotos; i++) {
+    let divTag = document.createElement("div");
+    divTag.classList.add("image");
+    let imgTag = document.createElement("img");
+    imgTag.src = "media/" + dir + "/img (" + i + ").JPG";
+    imgTag.alt = "Photo for category";
+    divTag.appendChild(imgTag);
+    photosConteiner.appendChild(divTag);
   }
-}
-
-function createImgElement(i) {
-  let divTag = document.createElement("div");
-  divTag.classList.add("image");
-  let imgTag = document.createElement("img");
-  imgTag.src = "media/menschen/imgMensch (" + i + ").JPG";
-  imgTag.alt = "Photo for category";
-  divTag.appendChild(imgTag);
-  return divTag;
 }
