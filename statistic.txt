@@ -1,0 +1,26 @@
+/*****************
+***Words Count***
+*****************/
+Tue, Nov 14, 2023 05:59:40 PM 
+ 1771 total
+
+Fri, Nov 17, 2023 12:20:33 PM
+   33 scss/_setcolors.scss
+   77 scss/categories.scss
+  217 scss/contact.scss
+  167 scss/index.scss
+  561 scss/main.scss
+   61 deploy/scripts/categories.js
+   11 deploy/scripts/form.js
+  268 deploy/scripts/gallery.js
+   19 deploy/scripts/main.js
+  215 deploy/contact.html
+   50 deploy/footer.html
+   56 deploy/header.html
+  161 deploy/index.html
+   82 deploy/menschen.html
+   82 deploy/natur.html
+   82 deploy/veranstaltungen.html
+ 2142 total
+Fri, Nov 17, 2023 12:20:33 PM
+
