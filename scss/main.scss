@@ -243,30 +243,6 @@ iframe {
     }
   }
 
-  #home {
-    .gallery {
-      width: 100%;
-      img {
-        &.photo_carusel {
-          height: 40vh;
-        }
-      }
-      .dot_control {
-        margin: 1vh 0;
-        .dot {
-          $size_dot: 15px;
-          width: $size_dot;
-          & img {
-            height: $size_dot;
-          }
-        }
-      }
-    }
-    .captionUnderGallery {
-      width: 95%;
-    }
-  }
-
   .myfooter {
     flex-flow: column;
     height: 100%;

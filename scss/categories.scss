@@ -1,0 +1,40 @@
+@import "setcolors";
+
+.category {
+  h1 {
+    $font_min_size: calc(max(5.4vw, 1.95em));
+    font-size: $font_min_size;
+    font-family: "Cheque", sans-serif; //"Dancing Script", cursive;
+    font-weight: 500;
+    text-align: center;
+    word-break: break-all;
+  }
+}
+
+.stock {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  .image {
+    height: 100%;
+    margin: 2vh 2vw;
+    img {
+      height: 46vh;
+      object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  .stock {
+    flex-flow: column;
+    .image {
+      width: 97%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

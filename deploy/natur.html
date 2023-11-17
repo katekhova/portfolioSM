@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/categories.css" />
+    <link rel="shortcut icon" href="media/camera.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/dbc971af0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer="true" src="scripts/main.js"></script>
+    <script defer="true" src="scripts/categories.js"></script>
+    <title>Maryna Smetana Photoshoots</title>
+  </head>
+  <body>
+    <iframe
+      src="header.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]); 
+      document.getElementsByClassName('menu')[0].addEventListener('click', openMenu); 
+      this.remove()"
+    ></iframe>
+    <main id="menschen">
+      <div class="category">
+        <h1>Natur</h1>
+      </div>
+      <div class="stock" amount="34" category="natur">
+        <div class="image"><img src="media/natur/img (0).jpg" /></div>
+        <div class="image"><img src="media/natur/img (1).jpg" /></div>
+        <div class="image"><img src="media/natur/img (2).jpg" /></div>
+      </div>
+    </main>
+    <iframe
+      src="footer.html"
+      onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"
+    ></iframe>
+  </body>
+</html>

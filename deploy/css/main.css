@@ -176,18 +176,6 @@ iframe {
         font-size: calc(max(4vw, 0.5em)); }
     .myheader .menu {
       top: 14vh; }
-  #home .gallery {
-    width: 100%; }
-    #home .gallery img.photo_carusel {
-      height: 40vh; }
-    #home .gallery .dot_control {
-      margin: 1vh 0; }
-      #home .gallery .dot_control .dot {
-        width: 15px; }
-        #home .gallery .dot_control .dot img {
-          height: 15px; }
-  #home .captionUnderGallery {
-    width: 95%; }
   .myfooter {
     flex-flow: column;
     height: 100%; }

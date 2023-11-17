@@ -56,7 +56,7 @@
       line-height: calc(max(2.5vw, 25px));
       $font_min_size: calc(max(1.8vw, 1.1em));
       font-size: $font_min_size;
-      font-family: "Cooper Hewitt";
+      font-family: "Cooper Hewitt", Verdana, Tahoma, sans-serif;
       font-weight: 500;
       letter-spacing: 2px;
     }
@@ -69,6 +69,14 @@
       $font_min_size: calc(max(4vw, 2em));
       font-size: $font_min_size;
       font-weight: 700;
+    }
+  }
+}
+
+@media only screen and (max-width: 433px) {
+  #home {
+    .captionUnderGallery {
+      width: 95%;
     }
   }
 }
