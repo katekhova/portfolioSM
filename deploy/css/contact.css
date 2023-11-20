@@ -53,17 +53,22 @@
         padding: 0 10px; }
     #contact form .radio {
       display: inline-flex;
-      align-items: center;
-      margin: 0 0; }
-      #contact form .radio [type="radio"] {
-        height: calc(max(1.5vw, 1em));
-        width: 6vw;
-        margin-left: 3vw;
-        accent-color: #aa276b; }
-        #contact form .radio [type="radio"]:hover {
-          box-shadow: none; }
-      #contact form .radio span {
-        font-size: calc(max(2vw, 0.8em)); }
+      flex-flow: column;
+      align-items: flex-end; }
+      #contact form .radio label {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 0;
+        width: fit-content; }
+        #contact form .radio label [type="radio"] {
+          height: calc(max(1.5vw, 1em));
+          width: 6vw;
+          margin-left: 3vw;
+          accent-color: #aa276b; }
+          #contact form .radio label [type="radio"]:hover {
+            box-shadow: none; }
+        #contact form .radio label span {
+          font-size: calc(max(2vw, 0.8em)); }
     #contact form textarea {
       font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
     #contact form [type="submit"] {

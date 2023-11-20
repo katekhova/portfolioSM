@@ -67,21 +67,26 @@
     }
     .radio {
       display: inline-flex;
-      align-items: center;
-      margin: 0 0;
-
-      [type="radio"] {
-        height: calc(max(1.5vw, 1em));
-        width: 6vw;
-        margin-left: 3vw;
-        accent-color: $accent;
-        &:hover {
-          box-shadow: none;
+      flex-flow: column;
+      align-items: flex-end;
+      label {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 0;
+        width: fit-content;
+        [type="radio"] {
+          height: calc(max(1.5vw, 1em));
+          width: 6vw;
+          margin-left: 3vw;
+          accent-color: $accent;
+          &:hover {
+            box-shadow: none;
+          }
         }
-      }
-      span {
-        $font_min_size: calc(max(2vw, 0.8em));
-        font-size: $font_min_size;
+        span {
+          $font_min_size: calc(max(2vw, 0.8em));
+          font-size: $font_min_size;
+        }
       }
     }
     textarea {
