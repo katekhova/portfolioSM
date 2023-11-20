@@ -12,7 +12,7 @@
   justify-content: center; }
   .stock .image {
     height: 100%;
-    margin: 2vh 2vw; }
+    margin: 2vh 2vh; }
     .stock .image img {
       height: 46vh;
       object-fit: cover; }
