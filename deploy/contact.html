@@ -82,7 +82,7 @@
               name="type"
               id="porträt"
               value="Porträt"
-              checked
+              required
             /> </label
           ><br />
 
@@ -112,7 +112,11 @@
         <textarea name="message" id="message" rows="5">
 Ich schlage als Termin vor:</textarea
         >
-        <input type="submit" value="Senden" />
+        <input
+          type="submit"
+          onclick="return confirm('Möchten Sie einen Auftrag senden?');"
+          value="Senden"
+        />
       </form>
     </main>
     <iframe
