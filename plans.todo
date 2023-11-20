@@ -1,0 +1,25 @@
+Clean Code:
+    ✔ import header & footer instead of copying @done (11/7/2023, 5:14:35 PM)
+
+Fast Load:
+    ✔ load 2-3 images before js code, so there is no delay @done (11/10/2023, 1:20:05 PM)
+
+Finish for use:
+    ✔ add links, main site -> logo, contact me @done (11/9/2023, 12:31:28 PM)
+    ✔ photos from Maryna in gallery! @done (11/10/2023, 3:10:49 PM)
+    ✔ photos from Maryna categories @done (11/17/2023, 12:34:08 PM)
+    ☐ text on contact site?
+    ☐ text on main site!!
+    ☐ links to social networks
+    ✔ spelling mistakes @done (11/9/2023, 11:01:45 AM)
+    e-mail:
+        ✔ subject better @done (11/9/2023, 11:01:09 AM)
+        ✔ name of person to form!!! @done (11/9/2023, 9:58:37 AM)
+Responsive:
+    ✔ large screens fixes: menu, footer links @done (11/7/2023, 6:12:46 PM)
+Nice to have:
+    ☐ text on category sites with a link to contact 
+    ☐ big photo view, pop-up window
+    ☐ light/dark theme button
+    ☐ gallery switch On/Off button
+    
