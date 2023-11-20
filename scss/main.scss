@@ -88,6 +88,7 @@ iframe {
       width: 37%;
       h1 {
         margin: 0;
+        color: #fff;
       }
     }
   }
@@ -176,8 +177,18 @@ iframe {
     $font_min_size: calc(max(1.8vw, 1.1em));
     font-size: $font_min_size;
     text-align: center;
-    text-shadow: 2px 0 2px $accent, 1px 0 1px #fff,
-      3px 0 5px darken($color: $accent, $amount: 35),
+    $shadowcolor: darken(
+      $color: $accent,
+      $amount: 35,
+    );
+    @if (lightness($accent) < 40) {
+      $shadowcolor: lighten(
+        $color: $accent,
+        $amount: 35,
+      );
+    }
+    text-shadow: 2px 0 2px $accent, 1px 0 1px complement_color($maincolor),
+      3px 0 5px $shadowcolor,
       2px 0 50px rgba($color: $secondary_color, $alpha: 1);
     width: 33.3%;
     height: 100%;
