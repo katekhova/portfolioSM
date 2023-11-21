@@ -1,77 +1,86 @@
 #contact {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  min-height: 45vh;
-  margin: 5vh 0;
-  border: rgba(246, 238, 246, 0.7) solid 5px;
-  border-radius: 20px; }
-  #contact .imageContact {
-    width: fit-content;
-    margin: auto auto; }
-    #contact .imageContact img {
-      height: 25vw;
-      max-height: 200px;
-      margin-top: 3vh;
-      border-radius: 20px;
-      background-color: #60707c; }
-  #contact form {
-    width: fit-content;
-    min-width: 50%;
-    height: fit-content;
-    margin: 5vh auto;
-    padding: 10px;
-    text-align: right; }
-    #contact form input,
-    #contact form select,
-    #contact form textarea {
-      background-color: #3b3b3b;
-      color: #f6eef6;
-      border-radius: 5px;
-      border: 1px solid rgba(96, 112, 124, 0.7);
-      margin: 4px;
-      padding: 2px 5px; }
-      #contact form input:hover,
-      #contact form select:hover,
-      #contact form textarea:hover {
-        box-shadow: 2px 2px 6px #333c43; }
-    #contact form * {
-      margin: 0.5vh 0;
-      width: 100%;
-      font-size: calc(max(1.8vw, 1.1em)); }
-    #contact form .person {
-      display: inline-flex;
-      align-items: center; }
-      #contact form .person .sex {
-        padding: 0 2% 0 0; }
-        #contact form .person .sex select {
-          font-size: calc(max(2.2vw, 1.05em)); }
-    #contact form fieldset {
-      border: 1px #60707c solid; }
-      #contact form fieldset legend {
-        width: fit-content;
-        padding: 0 10px; }
-    #contact form .radio {
-      display: inline-flex;
-      flex-flow: column;
-      align-items: flex-end; }
-      #contact form .radio label {
+  width: 100%; }
+  #contact .text {
+    width: 90%;
+    margin: auto;
+    font-size: calc(max(2.16vw, 1.32em));
+    font-family: "Cooper Hewitt", Verdana, Tahoma, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; }
+  #contact .formular {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    min-height: 45vh;
+    margin: 5vh 0;
+    border: rgba(246, 238, 246, 0.7) solid 5px;
+    border-radius: 20px; }
+    #contact .formular .imageContact {
+      width: fit-content;
+      margin: auto auto; }
+      #contact .formular .imageContact img {
+        height: 25vw;
+        max-height: 200px;
+        margin-top: 3vh;
+        border-radius: 20px;
+        background-color: #60707c; }
+    #contact .formular form {
+      width: fit-content;
+      min-width: 50%;
+      height: fit-content;
+      margin: 5vh auto;
+      padding: 10px;
+      text-align: right; }
+      #contact .formular form input,
+      #contact .formular form select,
+      #contact .formular form textarea {
+        background-color: #3b3b3b;
+        color: #f6eef6;
+        border-radius: 5px;
+        border: 1px solid rgba(96, 112, 124, 0.7);
+        margin: 4px;
+        padding: 2px 5px; }
+        #contact .formular form input:hover,
+        #contact .formular form select:hover,
+        #contact .formular form textarea:hover {
+          box-shadow: 2px 2px 6px #333c43; }
+      #contact .formular form * {
+        margin: 0.5vh 0;
+        width: 100%;
+        font-size: calc(max(1.8vw, 1.1em)); }
+      #contact .formular form .person {
         display: inline-flex;
-        align-items: center;
-        margin: 0 0;
-        width: fit-content; }
-        #contact form .radio label [type="radio"] {
-          height: calc(max(1.5vw, 1em));
-          width: 6vw;
-          margin-left: 3vw;
-          accent-color: #aa276b; }
-          #contact form .radio label [type="radio"]:hover {
-            box-shadow: none; }
-        #contact form .radio label span {
-          font-size: calc(max(2vw, 0.8em)); }
-    #contact form textarea {
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
-    #contact form [type="submit"] {
-      background-color: rgba(200, 214, 214, 0.3);
-      color: #f6eef6;
-      cursor: pointer; }
+        align-items: center; }
+        #contact .formular form .person .sex {
+          padding: 0 2% 0 0; }
+          #contact .formular form .person .sex select {
+            font-size: calc(max(2.2vw, 1.05em)); }
+      #contact .formular form fieldset {
+        border: 1px #60707c solid; }
+        #contact .formular form fieldset legend {
+          width: fit-content;
+          padding: 0 10px; }
+      #contact .formular form .radio {
+        display: inline-flex;
+        flex-flow: column;
+        align-items: flex-end; }
+        #contact .formular form .radio label {
+          display: inline-flex;
+          align-items: center;
+          margin: 0 0;
+          width: fit-content; }
+          #contact .formular form .radio label [type="radio"] {
+            height: calc(max(1.5vw, 1em));
+            width: 6vw;
+            margin-left: 3vw;
+            accent-color: #aa276b; }
+            #contact .formular form .radio label [type="radio"]:hover {
+              box-shadow: none; }
+          #contact .formular form .radio label span {
+            font-size: calc(max(2vw, 0.8em)); }
+      #contact .formular form textarea {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; }
+      #contact .formular form [type="submit"] {
+        background-color: rgba(200, 214, 214, 0.3);
+        color: #f6eef6;
+        cursor: pointer; }

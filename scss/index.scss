@@ -52,13 +52,16 @@
     margin: 5vh auto;
     padding: 0 3vw;
     h3 {
-      text-transform: uppercase;
-      line-height: calc(max(2.5vw, 25px));
+      b {
+        text-transform: uppercase;
+      }
+      //line-height: calc(max(2.5vw, 25px));
       $font_min_size: calc(max(1.8vw, 1.1em));
       font-size: $font_min_size;
       font-family: "Cooper Hewitt", Verdana, Tahoma, sans-serif;
       font-weight: 500;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
+      line-height: 1.6em;
     }
     h1 {
       text-align: center;

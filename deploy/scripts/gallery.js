@@ -10,7 +10,7 @@ setWidth();
 if (document.getElementById("dot0")) {
   document.getElementById("dot0").classList.add("current");
 }
-//window.setInterval(showImgSlideshow, 4000);
+window.setInterval(showImgSlideshow, 4000);
 
 function addAllPhotosToHtml(amount) {
   photosConteiner = document.getElementsByClassName("imagesGallery")[0];

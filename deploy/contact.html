@@ -23,102 +23,114 @@
     ></iframe>
 
     <main id="contact">
-      <div class="imageContact">
-        <img src="media/Notes-removebg-preview.png" alt="Contact Us!" />
+      <div class="text">
+        <p>
+          Wenn Du bereits Ideen für Fotoshooting hast, einen Termin vereinbaren
+          möchtest oder einfach nur eine Frage hast, fülle bitte dieses
+          Kontaktformular aus. Ich werde eine E-Mail erhalten und mich so
+          schnell wie möglich bei Dir melden. Ich freue mich darauf, von Dir zu
+          hören!
+        </p>
       </div>
-
-      <form action="" method="post" autocomplete="on" netlify>
-        <input
-          type="hidden"
-          name="subject"
-          id="subject"
-          data-remove-prefix
-          value="Fotoshooting-Anfrage"
-        />
-
-        <label for="email">E-Mail Adresse *</label><br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          autocomplete="email"
-        /><br />
-
-        <div class="person">
-          <!--Flex Item 1-->
-          <div class="sex">
-            <label for="sex">Anrede *</label>
-
-            <select name="sex" id="sex" required>
-              <option value="">Wählen Sie...</option>
-              <option value="Frau">Frau</option>
-              <option value="Herr">Herr</option>
-              <option value="divers">divers</option>
-            </select>
-          </div>
-          <!--Flex Item 2-->
-          <div class="name">
-            <label for="name">Name *</label><br />
-            <input
-              onchange="updateSubject(value)"
-              type="text"
-              name="name"
-              id="name"
-              required
-              autocomplete="name"
-            /><br />
-          </div>
+      <div class="formular">
+        <div class="imageContact">
+          <img src="media/Notes-removebg-preview.png" alt="Contact Us!" />
         </div>
-        <fieldset>
-          <legend>Art des Fotoshootings *</legend>
-          <label for="porträt" hidden>
-            <span>Art des Fotoshootings</span></label
-          >
-          <div class="radio">
-            <label for="porträt">
-              <span>Porträt</span>
+
+        <form action="" method="post" autocomplete="on" netlify>
+          <input
+            type="hidden"
+            name="subject"
+            id="subject"
+            data-remove-prefix
+            value="Fotoshooting-Anfrage"
+          />
+
+          <label for="email">E-Mail Adresse *</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="email"
+          /><br />
+
+          <div class="person">
+            <!--Flex Item 1-->
+            <div class="sex">
+              <label for="sex">Anrede *</label>
+
+              <select name="sex" id="sex" required>
+                <option value="">Wählen Sie...</option>
+                <option value="Frau">Frau</option>
+                <option value="Herr">Herr</option>
+                <option value="divers">divers</option>
+              </select>
+            </div>
+            <!--Flex Item 2-->
+            <div class="name">
+              <label for="name">Name *</label><br />
               <input
-                type="radio"
-                name="type"
-                id="porträt"
-                value="Porträt"
+                onchange="updateSubject(value)"
+                type="text"
+                name="name"
+                id="name"
                 required
-              /> </label
-            ><br />
-
-            <label for="veranstaltung">
-              <span>Veranstaltung</span>
-              <input
-                type="radio"
-                name="type"
-                id="veranstaltung"
-                value="Veranstaltung"
-              /> </label
-            ><br />
-
-            <label for="natur">
-              <span>Natur</span>
-              <input type="radio" name="type" id="natur" value="Natur" />
-            </label>
+                autocomplete="name"
+              /><br />
+            </div>
           </div>
-          <!-- <select name="type" id="type">
+          <fieldset>
+            <legend>Art des Fotoshootings *</legend>
+            <label for="porträt" hidden>
+              <span>Art des Fotoshootings</span></label
+            >
+            <div class="radio">
+              <label for="porträt">
+                <span>Porträt</span>
+                <input
+                  type="radio"
+                  name="type"
+                  id="porträt"
+                  value="Porträt"
+                  required
+                /> </label
+              ><br />
+
+              <label for="veranstaltung">
+                <span>Veranstaltung</span>
+                <input
+                  type="radio"
+                  name="type"
+                  id="veranstaltung"
+                  value="Veranstaltung"
+                /> </label
+              ><br />
+
+              <label for="natur">
+                <span>Natur</span>
+                <input type="radio" name="type" id="natur" value="Natur" />
+              </label>
+            </div>
+            <!-- <select name="type" id="type">
           <option value="Porträt">Porträt</option>
           <option value="Veranstaltung">Veranstaltung</option>
           <option value="Natur">Natur</option></select
           >-->
-        </fieldset>
-        <br />
-        <label for="message">Ihre Wünsche, z.B. Ort, Termin, Idee</label><br />
-        <textarea name="message" id="message" rows="5">
+          </fieldset>
+          <br />
+          <label for="message">Ihre Wünsche, z.B. Ort, Termin, Idee</label
+          ><br />
+          <textarea name="message" id="message" rows="5">
 Ich schlage als Termin vor:</textarea
-        >
-        <input
-          type="submit"
-          onclick="return confirm('Möchten Sie einen Auftrag senden?');"
-          value="Senden"
-        />
-      </form>
+          >
+          <input
+            type="submit"
+            onclick="return confirm('Möchten Sie einen Auftrag senden?');"
+            value="Senden"
+          />
+        </form>
+      </div>
     </main>
     <iframe
       src="footer.html"
